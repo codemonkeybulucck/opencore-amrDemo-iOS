@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6AB50091D1245E9005ADAFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50081D1245E9005ADAFA /* main.m */; };
+		B6AB500C1D1245E9005ADAFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB500B1D1245E9005ADAFA /* AppDelegate.m */; };
+		B6AB500F1D1245E9005ADAFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB500E1D1245E9005ADAFA /* ViewController.m */; };
+		B6AB50121D1245E9005ADAFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AB50101D1245E9005ADAFA /* Main.storyboard */; };
+		B6AB50141D1245E9005ADAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AB50131D1245E9005ADAFA /* Assets.xcassets */; };
+		B6AB50171D1245E9005ADAFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AB50151D1245E9005ADAFA /* LaunchScreen.storyboard */; };
+		B6AB50221D1245E9005ADAFA /* _01VoiceForAMRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50211D1245E9005ADAFA /* _01VoiceForAMRTests.m */; };
+		B6AB502D1D1245E9005ADAFA /* _01VoiceForAMRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB502C1D1245E9005ADAFA /* _01VoiceForAMRUITests.m */; };
+		B6AB50471D1246E2005ADAFA /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AB503C1D1246E2005ADAFA /* libopencore-amrnb.a */; };
+		B6AB50481D1246E2005ADAFA /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AB503D1D1246E2005ADAFA /* libopencore-amrwb.a */; };
+		B6AB50491D1246E2005ADAFA /* libvo-amrwbenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AB503E1D1246E2005ADAFA /* libvo-amrwbenc.a */; };
+		B6AB50521D124973005ADAFA /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50501D124973005ADAFA /* VoiceConverter.mm */; };
+		B6AB50551D1249EC005ADAFA /* WavToAmr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50541D1249EC005ADAFA /* WavToAmr.mm */; };
+		B6AB50571D125210005ADAFA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AB50561D125210005ADAFA /* AVFoundation.framework */; };
+		B6AB50611D128730005ADAFA /* EightKhzWavToAmrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50601D128730005ADAFA /* EightKhzWavToAmrViewController.m */; };
+		B6AB50671D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50661D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6AB501E1D1245E9005ADAFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6AB4FFC1D1245E8005ADAFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6AB50031D1245E8005ADAFA;
+			remoteInfo = "-01VoiceForAMR";
+		};
+		B6AB50291D1245E9005ADAFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6AB4FFC1D1245E8005ADAFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6AB50031D1245E8005ADAFA;
+			remoteInfo = "-01VoiceForAMR";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6AB50041D1245E8005ADAFA /* -01VoiceForAMR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "-01VoiceForAMR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AB50081D1245E9005ADAFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6AB500A1D1245E9005ADAFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6AB500B1D1245E9005ADAFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6AB500D1D1245E9005ADAFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6AB500E1D1245E9005ADAFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6AB50111D1245E9005ADAFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6AB50131D1245E9005ADAFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6AB50161D1245E9005ADAFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6AB50181D1245E9005ADAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AB501D1D1245E9005ADAFA /* -01VoiceForAMRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "-01VoiceForAMRTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AB50211D1245E9005ADAFA /* _01VoiceForAMRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _01VoiceForAMRTests.m; sourceTree = "<group>"; };
+		B6AB50231D1245E9005ADAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AB50281D1245E9005ADAFA /* -01VoiceForAMRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "-01VoiceForAMRUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AB502C1D1245E9005ADAFA /* _01VoiceForAMRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _01VoiceForAMRUITests.m; sourceTree = "<group>"; };
+		B6AB502E1D1245E9005ADAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AB503C1D1246E2005ADAFA /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		B6AB503D1D1246E2005ADAFA /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		B6AB503E1D1246E2005ADAFA /* libvo-amrwbenc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvo-amrwbenc.a"; sourceTree = "<group>"; };
+		B6AB50401D1246E2005ADAFA /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		B6AB50411D1246E2005ADAFA /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		B6AB50431D1246E2005ADAFA /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		B6AB50441D1246E2005ADAFA /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		B6AB50461D1246E2005ADAFA /* enc_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enc_if.h; sourceTree = "<group>"; };
+		B6AB504F1D124973005ADAFA /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		B6AB50501D124973005ADAFA /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		B6AB50531D1249EC005ADAFA /* WavToAmr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavToAmr.h; sourceTree = "<group>"; };
+		B6AB50541D1249EC005ADAFA /* WavToAmr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavToAmr.mm; sourceTree = "<group>"; };
+		B6AB50561D125210005ADAFA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B6AB505F1D128730005ADAFA /* EightKhzWavToAmrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EightKhzWavToAmrViewController.h; sourceTree = "<group>"; };
+		B6AB50601D128730005ADAFA /* EightKhzWavToAmrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EightKhzWavToAmrViewController.m; sourceTree = "<group>"; };
+		B6AB50651D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixteenKhzWavToAmrViewController.h; sourceTree = "<group>"; };
+		B6AB50661D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixteenKhzWavToAmrViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6AB50011D1245E8005ADAFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AB50571D125210005ADAFA /* AVFoundation.framework in Frameworks */,
+				B6AB50481D1246E2005ADAFA /* libopencore-amrwb.a in Frameworks */,
+				B6AB50491D1246E2005ADAFA /* libvo-amrwbenc.a in Frameworks */,
+				B6AB50471D1246E2005ADAFA /* libopencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AB501A1D1245E9005ADAFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AB50251D1245E9005ADAFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6AB4FFB1D1245E8005ADAFA = {
+			isa = PBXGroup;
+			children = (
+				B6AB50561D125210005ADAFA /* AVFoundation.framework */,
+				B6AB50061D1245E9005ADAFA /* -01VoiceForAMR */,
+				B6AB50201D1245E9005ADAFA /* -01VoiceForAMRTests */,
+				B6AB502B1D1245E9005ADAFA /* -01VoiceForAMRUITests */,
+				B6AB50051D1245E8005ADAFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6AB50051D1245E8005ADAFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB50041D1245E8005ADAFA /* -01VoiceForAMR.app */,
+				B6AB501D1D1245E9005ADAFA /* -01VoiceForAMRTests.xctest */,
+				B6AB50281D1245E9005ADAFA /* -01VoiceForAMRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6AB50061D1245E9005ADAFA /* -01VoiceForAMR */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB503A1D1246E2005ADAFA /* Opencore-AMR */,
+				B6AB500A1D1245E9005ADAFA /* AppDelegate.h */,
+				B6AB500B1D1245E9005ADAFA /* AppDelegate.m */,
+				B6AB500D1D1245E9005ADAFA /* ViewController.h */,
+				B6AB500E1D1245E9005ADAFA /* ViewController.m */,
+				B6AB50101D1245E9005ADAFA /* Main.storyboard */,
+				B6AB505F1D128730005ADAFA /* EightKhzWavToAmrViewController.h */,
+				B6AB50601D128730005ADAFA /* EightKhzWavToAmrViewController.m */,
+				B6AB50651D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.h */,
+				B6AB50661D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.m */,
+				B6AB50131D1245E9005ADAFA /* Assets.xcassets */,
+				B6AB50151D1245E9005ADAFA /* LaunchScreen.storyboard */,
+				B6AB50181D1245E9005ADAFA /* Info.plist */,
+				B6AB50071D1245E9005ADAFA /* Supporting Files */,
+			);
+			path = "-01VoiceForAMR";
+			sourceTree = "<group>";
+		};
+		B6AB50071D1245E9005ADAFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB50081D1245E9005ADAFA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6AB50201D1245E9005ADAFA /* -01VoiceForAMRTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB50211D1245E9005ADAFA /* _01VoiceForAMRTests.m */,
+				B6AB50231D1245E9005ADAFA /* Info.plist */,
+			);
+			path = "-01VoiceForAMRTests";
+			sourceTree = "<group>";
+		};
+		B6AB502B1D1245E9005ADAFA /* -01VoiceForAMRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB502C1D1245E9005ADAFA /* _01VoiceForAMRUITests.m */,
+				B6AB502E1D1245E9005ADAFA /* Info.plist */,
+			);
+			path = "-01VoiceForAMRUITests";
+			sourceTree = "<group>";
+		};
+		B6AB503A1D1246E2005ADAFA /* Opencore-AMR */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB504F1D124973005ADAFA /* VoiceConverter.h */,
+				B6AB50501D124973005ADAFA /* VoiceConverter.mm */,
+				B6AB50531D1249EC005ADAFA /* WavToAmr.h */,
+				B6AB50541D1249EC005ADAFA /* WavToAmr.mm */,
+				B6AB503B1D1246E2005ADAFA /* lib */,
+				B6AB503F1D1246E2005ADAFA /* opencore-amrnb */,
+				B6AB50421D1246E2005ADAFA /* opencore-amrwb */,
+				B6AB50451D1246E2005ADAFA /* vo-amrwbenc */,
+			);
+			path = "Opencore-AMR";
+			sourceTree = "<group>";
+		};
+		B6AB503B1D1246E2005ADAFA /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB503C1D1246E2005ADAFA /* libopencore-amrnb.a */,
+				B6AB503D1D1246E2005ADAFA /* libopencore-amrwb.a */,
+				B6AB503E1D1246E2005ADAFA /* libvo-amrwbenc.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B6AB503F1D1246E2005ADAFA /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB50401D1246E2005ADAFA /* interf_dec.h */,
+				B6AB50411D1246E2005ADAFA /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		B6AB50421D1246E2005ADAFA /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB50431D1246E2005ADAFA /* dec_if.h */,
+				B6AB50441D1246E2005ADAFA /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		B6AB50451D1246E2005ADAFA /* vo-amrwbenc */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB50461D1246E2005ADAFA /* enc_if.h */,
+			);
+			path = "vo-amrwbenc";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6AB50031D1245E8005ADAFA /* -01VoiceForAMR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6AB50311D1245E9005ADAFA /* Build configuration list for PBXNativeTarget "-01VoiceForAMR" */;
+			buildPhases = (
+				B6AB50001D1245E8005ADAFA /* Sources */,
+				B6AB50011D1245E8005ADAFA /* Frameworks */,
+				B6AB50021D1245E8005ADAFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "-01VoiceForAMR";
+			productName = "-01VoiceForAMR";
+			productReference = B6AB50041D1245E8005ADAFA /* -01VoiceForAMR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6AB501C1D1245E9005ADAFA /* -01VoiceForAMRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6AB50341D1245E9005ADAFA /* Build configuration list for PBXNativeTarget "-01VoiceForAMRTests" */;
+			buildPhases = (
+				B6AB50191D1245E9005ADAFA /* Sources */,
+				B6AB501A1D1245E9005ADAFA /* Frameworks */,
+				B6AB501B1D1245E9005ADAFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6AB501F1D1245E9005ADAFA /* PBXTargetDependency */,
+			);
+			name = "-01VoiceForAMRTests";
+			productName = "-01VoiceForAMRTests";
+			productReference = B6AB501D1D1245E9005ADAFA /* -01VoiceForAMRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6AB50271D1245E9005ADAFA /* -01VoiceForAMRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6AB50371D1245E9005ADAFA /* Build configuration list for PBXNativeTarget "-01VoiceForAMRUITests" */;
+			buildPhases = (
+				B6AB50241D1245E9005ADAFA /* Sources */,
+				B6AB50251D1245E9005ADAFA /* Frameworks */,
+				B6AB50261D1245E9005ADAFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6AB502A1D1245E9005ADAFA /* PBXTargetDependency */,
+			);
+			name = "-01VoiceForAMRUITests";
+			productName = "-01VoiceForAMRUITests";
+			productReference = B6AB50281D1245E9005ADAFA /* -01VoiceForAMRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6AB4FFC1D1245E8005ADAFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "势必可赢";
+				TargetAttributes = {
+					B6AB50031D1245E8005ADAFA = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					B6AB501C1D1245E9005ADAFA = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = B6AB50031D1245E8005ADAFA;
+					};
+					B6AB50271D1245E9005ADAFA = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = B6AB50031D1245E8005ADAFA;
+					};
+				};
+			};
+			buildConfigurationList = B6AB4FFF1D1245E8005ADAFA /* Build configuration list for PBXProject "-01VoiceForAMR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6AB4FFB1D1245E8005ADAFA;
+			productRefGroup = B6AB50051D1245E8005ADAFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6AB50031D1245E8005ADAFA /* -01VoiceForAMR */,
+				B6AB501C1D1245E9005ADAFA /* -01VoiceForAMRTests */,
+				B6AB50271D1245E9005ADAFA /* -01VoiceForAMRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6AB50021D1245E8005ADAFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AB50171D1245E9005ADAFA /* LaunchScreen.storyboard in Resources */,
+				B6AB50141D1245E9005ADAFA /* Assets.xcassets in Resources */,
+				B6AB50121D1245E9005ADAFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AB501B1D1245E9005ADAFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AB50261D1245E9005ADAFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6AB50001D1245E8005ADAFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AB50611D128730005ADAFA /* EightKhzWavToAmrViewController.m in Sources */,
+				B6AB50521D124973005ADAFA /* VoiceConverter.mm in Sources */,
+				B6AB50671D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.m in Sources */,
+				B6AB500F1D1245E9005ADAFA /* ViewController.m in Sources */,
+				B6AB50551D1249EC005ADAFA /* WavToAmr.mm in Sources */,
+				B6AB500C1D1245E9005ADAFA /* AppDelegate.m in Sources */,
+				B6AB50091D1245E9005ADAFA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AB50191D1245E9005ADAFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AB50221D1245E9005ADAFA /* _01VoiceForAMRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AB50241D1245E9005ADAFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AB502D1D1245E9005ADAFA /* _01VoiceForAMRUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6AB501F1D1245E9005ADAFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6AB50031D1245E8005ADAFA /* -01VoiceForAMR */;
+			targetProxy = B6AB501E1D1245E9005ADAFA /* PBXContainerItemProxy */;
+		};
+		B6AB502A1D1245E9005ADAFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6AB50031D1245E8005ADAFA /* -01VoiceForAMR */;
+			targetProxy = B6AB50291D1245E9005ADAFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6AB50101D1245E9005ADAFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6AB50111D1245E9005ADAFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6AB50151D1245E9005ADAFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6AB50161D1245E9005ADAFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6AB502F1D1245E9005ADAFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6AB50301D1245E9005ADAFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6AB50321D1245E9005ADAFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "-01VoiceForAMR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/-01VoiceForAMR/Opencore-AMR/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lemon.test.-01VoiceForAMR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6AB50331D1245E9005ADAFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "-01VoiceForAMR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/-01VoiceForAMR/Opencore-AMR/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lemon.test.-01VoiceForAMR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6AB50351D1245E9005ADAFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "-01VoiceForAMRTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lemon.test.-01VoiceForAMRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/-01VoiceForAMR.app/-01VoiceForAMR";
+			};
+			name = Debug;
+		};
+		B6AB50361D1245E9005ADAFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "-01VoiceForAMRTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lemon.test.-01VoiceForAMRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/-01VoiceForAMR.app/-01VoiceForAMR";
+			};
+			name = Release;
+		};
+		B6AB50381D1245E9005ADAFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "-01VoiceForAMRUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lemon.test.-01VoiceForAMRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "-01VoiceForAMR";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B6AB50391D1245E9005ADAFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "-01VoiceForAMRUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lemon.test.-01VoiceForAMRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "-01VoiceForAMR";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6AB4FFF1D1245E8005ADAFA /* Build configuration list for PBXProject "-01VoiceForAMR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6AB502F1D1245E9005ADAFA /* Debug */,
+				B6AB50301D1245E9005ADAFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6AB50311D1245E9005ADAFA /* Build configuration list for PBXNativeTarget "-01VoiceForAMR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6AB50321D1245E9005ADAFA /* Debug */,
+				B6AB50331D1245E9005ADAFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6AB50341D1245E9005ADAFA /* Build configuration list for PBXNativeTarget "-01VoiceForAMRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6AB50351D1245E9005ADAFA /* Debug */,
+				B6AB50361D1245E9005ADAFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6AB50371D1245E9005ADAFA /* Build configuration list for PBXNativeTarget "-01VoiceForAMRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6AB50381D1245E9005ADAFA /* Debug */,
+				B6AB50391D1245E9005ADAFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6AB4FFC1D1245E8005ADAFA /* Project object */;
+}
