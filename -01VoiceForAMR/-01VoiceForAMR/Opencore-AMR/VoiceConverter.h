@@ -8,7 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-#import "WavToAmr.h"
+#import "NarrowBandWavToAmr.h"
+#import "WidthBandWavToAmr.h"
+
+//声音采样率
+typedef NS_ENUM(NSInteger,Sample_Rate)
+{
+    Sample_Rate_16000 = 0,        //16K(默认)
+    Sample_Rate_8000 = 1,         //8K
+    Sample_Rate_44100 = 2,        //44K
+};
+
 
 
 @interface VoiceConverter : NSObject
@@ -21,7 +31,7 @@
  *
  *  @return 0失败 1成功
  */
-+ (int)ConvertWavToAmr:(NSString *)aWavPath amrSavePath:(NSString *)aSavePath sampleRateType:(SAMPLERATETYPE)sampleRateType;
++ (int)EncodeWavToAmr:(NSString *)aWavPath amrSavePath:(NSString *)aSavePath sampleRateType:(Sample_Rate)sampleRateType;
 
 /**
  *  转换amr到wav
@@ -31,13 +41,8 @@
  *
  *  @return 0失败 1成功
  */
-+ (int)ConvertAmrToWav:(NSString *)aAmrPath wavSavePath:(NSString *)aSavePath sampleRateType:(SAMPLERATETYPE)sampleRateType;
++ (int)DecodeAmrToWav:(NSString *)aAmrPath wavSavePath:(NSString *)aSavePath sampleRateType:(Sample_Rate)sampleRateType;
 
-/**
-	获取录音设置.
-    建议使用此设置，如有修改，则转换amr时也要对应修改参数，比较麻烦
-	@returns 录音设置
- */
-+ (NSDictionary*)GetAudioRecorderSettingDictWithSampleRateType:(SAMPLERATETYPE)sampleRateType;
++ (NSDictionary*)GetAudioRecorderSettingDictWithSampleRateType:(Sample_Rate)sampleRateType;
 
 @end

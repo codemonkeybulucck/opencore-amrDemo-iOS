@@ -49,7 +49,7 @@
     NSLog(@"录音文件的路径是：%@",self.recordFilePath);
     //初始化录音 8KHZ
     self.recorder = [[AVAudioRecorder alloc]initWithURL:[NSURL fileURLWithPath:self.recordFilePath]
-                                               settings:[VoiceConverter GetAudioRecorderSettingDictWithSampleRateType:SAMPLERATETYPEEightKHZ]
+                                               settings:[VoiceConverter GetAudioRecorderSettingDictWithSampleRateType:Sample_Rate_8000]
                                                   error:nil];
     
     //准备录音
@@ -93,7 +93,7 @@
     NSString *amrPath = [self GetPathByFileName:self.recordFileName ofType:@"amr"];
     
 #warning wav转amr
-    if ([VoiceConverter ConvertWavToAmr:self.recordFilePath amrSavePath:amrPath sampleRateType:SAMPLERATETYPEEightKHZ])
+    if ([VoiceConverter EncodeWavToAmr:self.recordFilePath amrSavePath:amrPath sampleRateType:Sample_Rate_8000])
     {
         
         //设置label信息
@@ -103,7 +103,7 @@
         NSString *convertedPath = [self GetPathByFileName:[self.recordFileName stringByAppendingString:@"_AmrToWav"] ofType:@"wav"];
         NSLog(@"----AMR文件:%@",convertedPath);
 #warning amr转wav
-        if ([VoiceConverter ConvertAmrToWav:amrPath wavSavePath:convertedPath sampleRateType:SAMPLERATETYPEEightKHZ])
+        if ([VoiceConverter DecodeAmrToWav:amrPath wavSavePath:convertedPath sampleRateType:Sample_Rate_8000])
         {
             //        设置label信息
             self.ToWavLabel.text = [NSString stringWithFormat:@"amr转wav:\n%@",[self getVoiceFileInfoByPath:convertedPath convertTime:[[NSDate date] timeIntervalSinceDate:date]]];

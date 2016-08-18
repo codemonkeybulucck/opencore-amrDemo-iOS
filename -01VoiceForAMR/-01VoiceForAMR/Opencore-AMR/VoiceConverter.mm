@@ -11,33 +11,58 @@
 
 @implementation VoiceConverter
 
-//转换amr到wav
-+ (int)ConvertAmrToWav:(NSString *)aAmrPath wavSavePath:(NSString *)aSavePath sampleRateType:(SAMPLERATETYPE)sampleRateType{
-    
-    if (!DecodeAMRFileToWAVEFile([aAmrPath cStringUsingEncoding:NSASCIIStringEncoding], [aSavePath cStringUsingEncoding:NSASCIIStringEncoding],sampleRateType))
-        return 0;
-    
-    return 1;
+/**
+ *  转换wav到amr
+ *
+ *  @param aWavPath  wav文件路径
+ *  @param aSavePath amr保存路径
+ *
+ *  @return 0失败 1成功
+ */
++ (int)EncodeWavToAmr:(NSString *)aWavPath amrSavePath:(NSString *)aSavePath sampleRateType:(Sample_Rate)sampleRateType
+{
+    if (sampleRateType == Sample_Rate_8000)
+    {
+        int result = EncodeNarrowBandWAVEFileToAMRFile([aWavPath cStringUsingEncoding:NSUTF8StringEncoding], [aSavePath cStringUsingEncoding:NSUTF8StringEncoding], 1, 16);
+        return  result;
+    }
+    else
+    {
+        int result = EncodeWidthBandWAVEFileToAMRFile([aWavPath cStringUsingEncoding:NSUTF8StringEncoding], [aSavePath cStringUsingEncoding:NSUTF8StringEncoding]);
+        return  result;
+    }
 }
 
-//转换wav到amr
-+ (int)ConvertWavToAmr:(NSString *)aWavPath amrSavePath:(NSString *)aSavePath sampleRateType:(SAMPLERATETYPE)sampleRateType{
-    
-    if (! EncodeWAVEFileToAMRFile([aWavPath cStringUsingEncoding:NSASCIIStringEncoding], [aSavePath cStringUsingEncoding:NSASCIIStringEncoding], 1, 16,sampleRateType))
-        return 0;
-    
-    return 1;
+/**
+ *  转换amr到wav
+ *
+ *  @param aAmrPath  amr文件路径
+ *  @param aSavePath wav保存路径
+ *
+ *  @return 0失败 1成功
+ */
++ (int)DecodeAmrToWav:(NSString *)aAmrPath wavSavePath:(NSString *)aSavePath sampleRateType:(Sample_Rate)sampleRateType
+{
+    if (sampleRateType == Sample_Rate_8000)
+    {
+        return  DecodeNarrowBandAMRFileToWAVEFile([aAmrPath cStringUsingEncoding:NSUTF8StringEncoding], [aSavePath cStringUsingEncoding:NSUTF8StringEncoding]);
+    }
+    else
+    {
+        return  DecodeWidthBandAMRFileToWAVEFile([aAmrPath cStringUsingEncoding:NSUTF8StringEncoding], [aSavePath cStringUsingEncoding:NSUTF8StringEncoding]);
+    }
 }
+
 
 //获取录音设置
-+ (NSDictionary*)GetAudioRecorderSettingDictWithSampleRateType:(SAMPLERATETYPE)sampleRateType
++ (NSDictionary*)GetAudioRecorderSettingDictWithSampleRateType:(Sample_Rate)sampleRateType
 {
-    CGFloat sampleRateValue;
-    if(sampleRateType == SAMPLERATETYPEEightKHZ)
+    CGFloat sampleRateValue = 16000.0;
+    if(sampleRateType == Sample_Rate_8000)
     {
         sampleRateValue = 8000.0;
     }
-    if (sampleRateType == SAMPLERATETYPESiXTeenKHZ)
+    if (sampleRateType == Sample_Rate_16000)
     {
         sampleRateValue = 16000.0;
     }

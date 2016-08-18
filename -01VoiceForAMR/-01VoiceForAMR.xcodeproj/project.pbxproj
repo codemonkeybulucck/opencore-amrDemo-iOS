@@ -15,14 +15,17 @@
 		B6AB50171D1245E9005ADAFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AB50151D1245E9005ADAFA /* LaunchScreen.storyboard */; };
 		B6AB50221D1245E9005ADAFA /* _01VoiceForAMRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50211D1245E9005ADAFA /* _01VoiceForAMRTests.m */; };
 		B6AB502D1D1245E9005ADAFA /* _01VoiceForAMRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB502C1D1245E9005ADAFA /* _01VoiceForAMRUITests.m */; };
-		B6AB50471D1246E2005ADAFA /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AB503C1D1246E2005ADAFA /* libopencore-amrnb.a */; };
-		B6AB50481D1246E2005ADAFA /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AB503D1D1246E2005ADAFA /* libopencore-amrwb.a */; };
-		B6AB50491D1246E2005ADAFA /* libvo-amrwbenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AB503E1D1246E2005ADAFA /* libvo-amrwbenc.a */; };
-		B6AB50521D124973005ADAFA /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50501D124973005ADAFA /* VoiceConverter.mm */; };
-		B6AB50551D1249EC005ADAFA /* WavToAmr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50541D1249EC005ADAFA /* WavToAmr.mm */; };
 		B6AB50571D125210005ADAFA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AB50561D125210005ADAFA /* AVFoundation.framework */; };
 		B6AB50611D128730005ADAFA /* EightKhzWavToAmrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50601D128730005ADAFA /* EightKhzWavToAmrViewController.m */; };
 		B6AB50671D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB50661D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.m */; };
+		B6C893101D65671400A8B517 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C892FB1D65671400A8B517 /* libopencore-amrnb.a */; };
+		B6C893111D65671400A8B517 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C892FC1D65671400A8B517 /* libopencore-amrwb.a */; };
+		B6C893121D65671400A8B517 /* libvo-amrwbenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C892FD1D65671400A8B517 /* libvo-amrwbenc.a */; };
+		B6C893131D65671400A8B517 /* NarrowBandWavToAmr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6C892FF1D65671400A8B517 /* NarrowBandWavToAmr.mm */; };
+		B6C893141D65671400A8B517 /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6C893091D65671400A8B517 /* VoiceConverter.mm */; };
+		B6C893151D65671400A8B517 /* wavreader.c in Sources */ = {isa = PBXBuildFile; fileRef = B6C8930A1D65671400A8B517 /* wavreader.c */; };
+		B6C893161D65671400A8B517 /* wavwriter.c in Sources */ = {isa = PBXBuildFile; fileRef = B6C8930C1D65671400A8B517 /* wavwriter.c */; };
+		B6C893171D65671400A8B517 /* WidthBandWavToAmr.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6C8930F1D65671400A8B517 /* WidthBandWavToAmr.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,23 +62,31 @@
 		B6AB50281D1245E9005ADAFA /* -01VoiceForAMRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "-01VoiceForAMRUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AB502C1D1245E9005ADAFA /* _01VoiceForAMRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _01VoiceForAMRUITests.m; sourceTree = "<group>"; };
 		B6AB502E1D1245E9005ADAFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6AB503C1D1246E2005ADAFA /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
-		B6AB503D1D1246E2005ADAFA /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
-		B6AB503E1D1246E2005ADAFA /* libvo-amrwbenc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvo-amrwbenc.a"; sourceTree = "<group>"; };
-		B6AB50401D1246E2005ADAFA /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
-		B6AB50411D1246E2005ADAFA /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
-		B6AB50431D1246E2005ADAFA /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
-		B6AB50441D1246E2005ADAFA /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
-		B6AB50461D1246E2005ADAFA /* enc_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enc_if.h; sourceTree = "<group>"; };
-		B6AB504F1D124973005ADAFA /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
-		B6AB50501D124973005ADAFA /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
-		B6AB50531D1249EC005ADAFA /* WavToAmr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavToAmr.h; sourceTree = "<group>"; };
-		B6AB50541D1249EC005ADAFA /* WavToAmr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavToAmr.mm; sourceTree = "<group>"; };
 		B6AB50561D125210005ADAFA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B6AB505F1D128730005ADAFA /* EightKhzWavToAmrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EightKhzWavToAmrViewController.h; sourceTree = "<group>"; };
 		B6AB50601D128730005ADAFA /* EightKhzWavToAmrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EightKhzWavToAmrViewController.m; sourceTree = "<group>"; };
 		B6AB50651D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixteenKhzWavToAmrViewController.h; sourceTree = "<group>"; };
 		B6AB50661D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixteenKhzWavToAmrViewController.m; sourceTree = "<group>"; };
+		B6C892FB1D65671400A8B517 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		B6C892FC1D65671400A8B517 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		B6C892FD1D65671400A8B517 /* libvo-amrwbenc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvo-amrwbenc.a"; sourceTree = "<group>"; };
+		B6C892FE1D65671400A8B517 /* NarrowBandWavToAmr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NarrowBandWavToAmr.h; sourceTree = "<group>"; };
+		B6C892FF1D65671400A8B517 /* NarrowBandWavToAmr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NarrowBandWavToAmr.mm; sourceTree = "<group>"; };
+		B6C893011D65671400A8B517 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		B6C893021D65671400A8B517 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		B6C893041D65671400A8B517 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		B6C893051D65671400A8B517 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		B6C893071D65671400A8B517 /* enc_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enc_if.h; sourceTree = "<group>"; };
+		B6C893081D65671400A8B517 /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceConverter.h; sourceTree = "<group>"; };
+		B6C893091D65671400A8B517 /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VoiceConverter.mm; sourceTree = "<group>"; };
+		B6C8930A1D65671400A8B517 /* wavreader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wavreader.c; sourceTree = "<group>"; };
+		B6C8930B1D65671400A8B517 /* wavreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wavreader.h; sourceTree = "<group>"; };
+		B6C8930C1D65671400A8B517 /* wavwriter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wavwriter.c; sourceTree = "<group>"; };
+		B6C8930D1D65671400A8B517 /* wavwriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wavwriter.h; sourceTree = "<group>"; };
+		B6C8930E1D65671400A8B517 /* WidthBandWavToAmr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidthBandWavToAmr.h; sourceTree = "<group>"; };
+		B6C8930F1D65671400A8B517 /* WidthBandWavToAmr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WidthBandWavToAmr.mm; sourceTree = "<group>"; };
+		B6C893181D6567A300A8B517 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B6C8931B1D65687E00A8B517 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +95,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6AB50571D125210005ADAFA /* AVFoundation.framework in Frameworks */,
-				B6AB50481D1246E2005ADAFA /* libopencore-amrwb.a in Frameworks */,
-				B6AB50491D1246E2005ADAFA /* libvo-amrwbenc.a in Frameworks */,
-				B6AB50471D1246E2005ADAFA /* libopencore-amrnb.a in Frameworks */,
+				B6C893111D65671400A8B517 /* libopencore-amrwb.a in Frameworks */,
+				B6C893101D65671400A8B517 /* libopencore-amrnb.a in Frameworks */,
+				B6C893121D65671400A8B517 /* libvo-amrwbenc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +121,8 @@
 		B6AB4FFB1D1245E8005ADAFA = {
 			isa = PBXGroup;
 			children = (
+				B6C8931B1D65687E00A8B517 /* libc.tbd */,
+				B6C893181D6567A300A8B517 /* libc++.tbd */,
 				B6AB50561D125210005ADAFA /* AVFoundation.framework */,
 				B6AB50061D1245E9005ADAFA /* -01VoiceForAMR */,
 				B6AB50201D1245E9005ADAFA /* -01VoiceForAMRTests */,
@@ -131,7 +144,7 @@
 		B6AB50061D1245E9005ADAFA /* -01VoiceForAMR */ = {
 			isa = PBXGroup;
 			children = (
-				B6AB503A1D1246E2005ADAFA /* Opencore-AMR */,
+				B6C892F91D65671400A8B517 /* Opencore-AMR */,
 				B6AB500A1D1245E9005ADAFA /* AppDelegate.h */,
 				B6AB500B1D1245E9005ADAFA /* AppDelegate.m */,
 				B6AB500D1D1245E9005ADAFA /* ViewController.h */,
@@ -175,53 +188,59 @@
 			path = "-01VoiceForAMRUITests";
 			sourceTree = "<group>";
 		};
-		B6AB503A1D1246E2005ADAFA /* Opencore-AMR */ = {
+		B6C892F91D65671400A8B517 /* Opencore-AMR */ = {
 			isa = PBXGroup;
 			children = (
-				B6AB504F1D124973005ADAFA /* VoiceConverter.h */,
-				B6AB50501D124973005ADAFA /* VoiceConverter.mm */,
-				B6AB50531D1249EC005ADAFA /* WavToAmr.h */,
-				B6AB50541D1249EC005ADAFA /* WavToAmr.mm */,
-				B6AB503B1D1246E2005ADAFA /* lib */,
-				B6AB503F1D1246E2005ADAFA /* opencore-amrnb */,
-				B6AB50421D1246E2005ADAFA /* opencore-amrwb */,
-				B6AB50451D1246E2005ADAFA /* vo-amrwbenc */,
+				B6C892FA1D65671400A8B517 /* lib */,
+				B6C892FE1D65671400A8B517 /* NarrowBandWavToAmr.h */,
+				B6C892FF1D65671400A8B517 /* NarrowBandWavToAmr.mm */,
+				B6C893001D65671400A8B517 /* opencore-amrnb */,
+				B6C893031D65671400A8B517 /* opencore-amrwb */,
+				B6C893061D65671400A8B517 /* vo-amrwbenc */,
+				B6C893081D65671400A8B517 /* VoiceConverter.h */,
+				B6C893091D65671400A8B517 /* VoiceConverter.mm */,
+				B6C8930A1D65671400A8B517 /* wavreader.c */,
+				B6C8930B1D65671400A8B517 /* wavreader.h */,
+				B6C8930C1D65671400A8B517 /* wavwriter.c */,
+				B6C8930D1D65671400A8B517 /* wavwriter.h */,
+				B6C8930E1D65671400A8B517 /* WidthBandWavToAmr.h */,
+				B6C8930F1D65671400A8B517 /* WidthBandWavToAmr.mm */,
 			);
 			path = "Opencore-AMR";
 			sourceTree = "<group>";
 		};
-		B6AB503B1D1246E2005ADAFA /* lib */ = {
+		B6C892FA1D65671400A8B517 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				B6AB503C1D1246E2005ADAFA /* libopencore-amrnb.a */,
-				B6AB503D1D1246E2005ADAFA /* libopencore-amrwb.a */,
-				B6AB503E1D1246E2005ADAFA /* libvo-amrwbenc.a */,
+				B6C892FB1D65671400A8B517 /* libopencore-amrnb.a */,
+				B6C892FC1D65671400A8B517 /* libopencore-amrwb.a */,
+				B6C892FD1D65671400A8B517 /* libvo-amrwbenc.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
 		};
-		B6AB503F1D1246E2005ADAFA /* opencore-amrnb */ = {
+		B6C893001D65671400A8B517 /* opencore-amrnb */ = {
 			isa = PBXGroup;
 			children = (
-				B6AB50401D1246E2005ADAFA /* interf_dec.h */,
-				B6AB50411D1246E2005ADAFA /* interf_enc.h */,
+				B6C893011D65671400A8B517 /* interf_dec.h */,
+				B6C893021D65671400A8B517 /* interf_enc.h */,
 			);
 			path = "opencore-amrnb";
 			sourceTree = "<group>";
 		};
-		B6AB50421D1246E2005ADAFA /* opencore-amrwb */ = {
+		B6C893031D65671400A8B517 /* opencore-amrwb */ = {
 			isa = PBXGroup;
 			children = (
-				B6AB50431D1246E2005ADAFA /* dec_if.h */,
-				B6AB50441D1246E2005ADAFA /* if_rom.h */,
+				B6C893041D65671400A8B517 /* dec_if.h */,
+				B6C893051D65671400A8B517 /* if_rom.h */,
 			);
 			path = "opencore-amrwb";
 			sourceTree = "<group>";
 		};
-		B6AB50451D1246E2005ADAFA /* vo-amrwbenc */ = {
+		B6C893061D65671400A8B517 /* vo-amrwbenc */ = {
 			isa = PBXGroup;
 			children = (
-				B6AB50461D1246E2005ADAFA /* enc_if.h */,
+				B6C893071D65671400A8B517 /* enc_if.h */,
 			);
 			path = "vo-amrwbenc";
 			sourceTree = "<group>";
@@ -356,13 +375,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C893131D65671400A8B517 /* NarrowBandWavToAmr.mm in Sources */,
 				B6AB50611D128730005ADAFA /* EightKhzWavToAmrViewController.m in Sources */,
-				B6AB50521D124973005ADAFA /* VoiceConverter.mm in Sources */,
 				B6AB50671D1287A6005ADAFA /* SixteenKhzWavToAmrViewController.m in Sources */,
 				B6AB500F1D1245E9005ADAFA /* ViewController.m in Sources */,
-				B6AB50551D1249EC005ADAFA /* WavToAmr.mm in Sources */,
+				B6C893171D65671400A8B517 /* WidthBandWavToAmr.mm in Sources */,
 				B6AB500C1D1245E9005ADAFA /* AppDelegate.m in Sources */,
+				B6C893151D65671400A8B517 /* wavreader.c in Sources */,
 				B6AB50091D1245E9005ADAFA /* main.m in Sources */,
+				B6C893141D65671400A8B517 /* VoiceConverter.mm in Sources */,
+				B6C893161D65671400A8B517 /* wavwriter.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
