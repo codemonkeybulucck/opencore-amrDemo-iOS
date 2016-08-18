@@ -93,7 +93,7 @@
     NSDate *date = [NSDate date];
     NSString *amrPath = [self GetPathByFileName:self.recordFileName ofType:@"amr"];
     
-#warning wav转amr
+    //WAV 转  amr
     if ([VoiceConverter EncodeWavToAmr:self.recordFilePath amrSavePath:amrPath sampleRateType:Sample_Rate_16000])
     {
         
@@ -103,7 +103,8 @@
         date = [NSDate date];
         NSString *convertedPath = [self GetPathByFileName:[self.recordFileName stringByAppendingString:@"_AmrToWav"] ofType:@"wav"];
         NSLog(@"----AMR文件:%@",convertedPath);
-#warning amr转wav
+        
+        // AMR 转 wav
         if ([VoiceConverter  DecodeAmrToWav:amrPath wavSavePath:convertedPath sampleRateType:Sample_Rate_16000])
         {
             //        设置label信息
