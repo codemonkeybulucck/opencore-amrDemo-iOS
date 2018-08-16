@@ -20,7 +20,7 @@
 #!/bin/sh
 set -xe
  
-#注意这里的版本要对应到压缩包的版本
+#注意这里的版本要对应到压缩包的版本，注意一下解压的时候名字要对应下载下来的压缩包的名字
 VERSION="0.1.3" 
 SDKVERSION="8.4"
 LIBSRCNAME="opencore-amr"
@@ -28,7 +28,7 @@ LIBSRCNAME="opencore-amr"
 CURRENTPATH=`pwd`
  
 mkdir -p "${CURRENTPATH}/src"
-tar zxvf ${LIBSRCNAME}-${VERSION}.tar.gz -C "${CURRENTPATH}/src"
+tar zxvf ${LIBSRCNAME}-${VERSION}.tar -C "${CURRENTPATH}/src"
 cd "${CURRENTPATH}/src/${LIBSRCNAME}-${VERSION}"
  
 DEVELOPER=`xcode-select -print-path`
@@ -108,6 +108,7 @@ done
 
 set -xe
 
+#注意这里的版本要对应到压缩包的版本，注意一下解压的时候名字要对应下载下来的压缩包的名字
 VERSION="0.1.3"
 
 LIBSRCNAME="vo-amrwbenc"
