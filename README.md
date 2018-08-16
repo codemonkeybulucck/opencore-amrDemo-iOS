@@ -20,7 +20,7 @@
 #!/bin/sh
 set -xe
  
-VERSION="0.1.3"
+VERSION="0.1.3" #注意这里的版本要对应到压缩包的版本
 SDKVERSION="8.4"
 LIBSRCNAME="opencore-amr"
  
