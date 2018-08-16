@@ -7,7 +7,7 @@
   8khz 和 16khz两个不同的采样率的wav文件如果要使用AMR压缩是使用两个不同的库，如果是8Khz的话是使用[opencore-amr](https://sourceforge.net/projects/opencore-amr/)
   里面提供的amrnb encode和decode的方法。
   
-  如果是16khz则使用了两个库，如果是AMR解码则使用的是和8khz一样，使用的是[opencore-amr](https://sourceforge.net/projects/opencore-amr/)
+  如果是16khz则使用了两个库，如果是AMR解码则使用的是和8khz一样，使用的是[opencore-amr](https://sourceforge.net/projects/opencore-amr/files/opencore-amr/)
   里面提供的amrwb 的decode的方法。如果是AMR编码则使用的是另外一个库[vo-amrwbenc](https://sourceforge.net/projects/opencore-amr/files/vo-amrwbenc/)，该仓单独提供了一个独立的编码方法
   
 ## 编译
